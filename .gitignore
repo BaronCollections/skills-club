@@ -1,0 +1,30 @@
+# Node
+node_modules/
+npm-debug.log*
+
+# Next.js
+.next/
+out/
+
+# Build
+dist/
+coverage/
+apps/web/prisma/*.db
+apps/web/prisma/*.db-journal
+
+# Environment
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# OS
+.DS_Store
+
+# Logs
+*.log
+
+# Editors
+.idea/
+.vscode/

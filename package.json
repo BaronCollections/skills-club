@@ -1,0 +1,17 @@
+{
+  "name": "skills-club",
+  "private": true,
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev": "npm --prefix apps/web run dev",
+    "build": "npm --prefix apps/web run build",
+    "lint": "npm --prefix apps/web run lint",
+    "db:generate": "npm --prefix apps/web run db:generate",
+    "db:push": "npm --prefix apps/web run db:push",
+    "db:bootstrap": "npm --prefix apps/web run db:bootstrap",
+    "db:seed": "npm --prefix apps/web run db:seed",
+    "db:studio": "npm --prefix apps/web run db:studio"
+  }
+}
