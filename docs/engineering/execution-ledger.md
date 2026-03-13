@@ -60,6 +60,7 @@ External AI products named by the user are treated as optional specialist workst
 - Confirmed the project still passes `npm run lint` and `npm run build` after the data-layer changes.
 - Replaced homepage, rankings, and skill detail mock reads with Prisma-backed query helpers while keeping a safe fallback path.
 - Started preparing the first repository baseline snapshot `version_0313` so later implementation can branch from a stable checkpoint.
+- Created and pushed the first project baseline to GitHub, with branch `main` and tag `version_0313`.
 
 ## Decisions Log
 
@@ -72,6 +73,7 @@ External AI products named by the user are treated as optional specialist workst
 | 2026-03-13 | Pin Prisma to 6.x for the current build | Prisma 7 introduced unnecessary adapter/config complexity for the current stage and slowed delivery |
 | 2026-03-13 | Use `/tmp/skills-club-dev.db` for the local SQLite prototype | Avoids path issues from spaces and non-ASCII characters in the workspace path |
 | 2026-03-13 | Keep `db:bootstrap` as a local fallback | `prisma db push` is still unreliable in this environment, but the schema and seed pipeline remain usable |
+| 2026-03-13 | Tag the pushed baseline as `version_0313` | Gives future work a clean resume point after the first GitHub push |
 
 ## Current Queue
 
